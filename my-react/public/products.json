@@ -1,0 +1,23 @@
+{
+    "ret": true,
+    "data": [
+      {
+        "id": "a001",
+        "name": "iphone 10",
+        "price": 5000,
+        "inventory": 2
+      },
+      {
+        "id": "a002",
+        "name": "iphone 11",
+        "price": 7000,
+        "inventory": 3
+      },
+      {
+        "id": "a003",
+        "name": "iphone 12",
+        "price": 9000,
+        "inventory": 5
+      }
+    ]
+  }
