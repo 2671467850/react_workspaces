@@ -4,7 +4,7 @@
  * @Author: Ankang
  * @Date: 2021-07-07 20:26:30
  * @LastEditors: Ankang
- * @LastEditTime: 2021-07-13 08:44:23
+ * @LastEditTime: 2021-07-15 22:36:40
  */
 import { defineConfig } from 'umi';
 // import routes from './routes';
@@ -13,11 +13,10 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  // layout: {
-  //   name: 'Ant Design',
-  //   locale: true,
-  //   layout: 'side',
-  // },
-  // routes,
   fastRefresh: {},
+  dva: {
+    immer: true,
+    hmr: false,
+    skipModelValidate:true
+  },
 });
