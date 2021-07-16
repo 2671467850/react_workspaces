@@ -4,7 +4,7 @@
  * @Author: Ankang
  * @Date: 2021-07-07 21:57:46
  * @LastEditors: Ankang
- * @LastEditTime: 2021-07-15 21:21:26
+ * @LastEditTime: 2021-07-16 20:40:47
  */
 import React, { useCallback } from 'react'
 import { history } from 'umi';
@@ -19,7 +19,8 @@ export default function index() {
 
   const onFinish = useCallback(
     async (values) => {
-      console.log(values);
+      // value--表单数据
+      // console.log(values);
       let { username, password } = values
       
       await axios({
