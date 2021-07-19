@@ -4,7 +4,7 @@
  * @Author: Ankang
  * @Date: 2021-07-13 08:32:45
  * @LastEditors: Ankang
- * @LastEditTime: 2021-07-16 20:48:33
+ * @LastEditTime: 2021-07-17 11:50:22
  */
 import { createProxyMiddleware, fixRequestBody } from 'http-proxy-middleware'
 
@@ -31,6 +31,12 @@ export default {
   },
 
   'post /api/*': (req, res) => {
+    // 添加跨域请求头
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    proxyData(req, res)
+  },
+
+  'patch /api/*': (req, res) => {
     // 添加跨域请求头
     res.setHeader('Access-Control-Allow-Origin', '*');
     proxyData(req, res)
